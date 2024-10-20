@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(4, 0, 26);
+    color: white;
+}
+#dp,#dh, iframe{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    width: 80%;
+    text-align: center;
+}
+#dp{
+    margin-top: 10px;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: fadein-iframe 1s 10s forwards;
+    height: 400px;
+}
+h1{
+    animation: fadein1 10s,fadeout1 5s 5s;
+    opacity: 0;
+}
+h2{
+    animation: fadein2 10s,fadeout2 5s 5s;
+    opacity: 0;
+}
+@keyframes fadein1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeout1{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadein2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeout2{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadein-iframe{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+#btny{
+    margin: 20px;
+    border: 2px solid rgb(0, 180, 0);
+    background-color: rgb(4, 0, 26);
+    color: rgb(0, 180, 0);
+    transition: 1s ease-in-out;
+}
+#btnn{
+    margin: 20px;
+    border: 2px solid red;
+    background-color: rgb(4, 0, 26);
+    color: red;
+    transition: 1s ease-in-out;
+}
+#btny:hover{
+    transform: scale(1.2);
+    box-shadow: 0 -5px 20px -5px rgb(0, 180, 0);
+    background-color: rgb(0, 180, 0);
+    color: rgb(4, 0, 26);
+}
+
+form{
+    margin-top: 20px;
+    text-align: center;
+}
+.box{
+    margin: 15px;
+}
+#btnn {
+    position: relative;
+    animation: move 0.8s infinite;
+}
+
+@keyframes move {
+    0% { top: 0; left: 0; }
+    25% { top: -30px; left: 30px; }
+    50% { top: 30px; left: -30px; }
+    75% { top: -30px; left: -30px; }
+    100% { top: 0; left: 0; }
+}
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px -20px white;
+}
+#m2{
+    animation: go 5s forwards 0.2s;
+    opacity: 0;
+}
+.fp{
+    animation: go 5s forwards 0.2s;
+    opacity: 0;
+}
+@keyframes go{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+h3{
+    margin-top: 60px;
+    animation: fadein3 1s forwards 20s;
+    opacity: 0;
+}
+@keyframes fadein3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
